@@ -20,7 +20,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-items: center;
-    padding: 1rem;
+    padding-top: 100px;
 }
 nav{
     display: flex;
@@ -81,99 +81,69 @@ h1{
   padding: 30px 0px;
 }
 
-form {
-  width: 100%;
-  max-width: 30rem;
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: var(--cor2);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
-label,
-input,
-textarea,
-button{
-  display: block;
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-variant: small-caps;
 }
-
-input,
-textarea,
-button {
-  width: 100%;
-  font: inherit;
-  padding: 1.25rem;
-  font-weight: 700;
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-
-input,
-textarea {
-  margin-bottom: 1rem;
-  color: white;
-  background: #323644;
-  border: 0.125rem solid transparent;
-  border-radius: 1.125rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
 }
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  outline: none;
-  border-color: #1d90f5;
-  box-shadow: 0 0 0 0.3125rem #26344a;
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
 }
-
-label {
-  margin-bottom: 0.5rem;
-  color: #84868f;
+form input:focus{
+    border-radius: 16px;
 }
-
-textarea {
-  min-height: 12.5rem;
-  resize: vertical;
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
 }
-
-button {
-  border: none;
-  border-radius: 99px;
-  color: white;
-  background: #1d90f5;
-  cursor: pointer;
-  transition: 0.3s;
+form textarea:focus{
+    border-radius: 16px;
 }
-
-button:hover,
-button:focus {
-  outline: none;
-  background: #1c70d3;
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
 }
-
-button:disabled {
-  cursor: not-allowed;
-  background: #555b69;
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
 }
-
-.success,
-.error {
-  text-align: center;
-}
-
-.success {
-  color: var(--cor2);
-}
-
-.error {
-  color: tomato;
-}
-
-gallery {
-  width: 100%; /* isso é padrão para elementos div */
-  
-  border: 1px solid;
-}
-
-.gallery .image {
-  width: 99%; 
-}
-
 
 /* >> BOTÃO WHATSAP<< */
 .btn-whatsapp a {

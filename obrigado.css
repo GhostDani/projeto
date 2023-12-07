@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #c5e5eb;
+    --cor1: #08d3d3;
+    --cor2: #3d82dc;
+    --cor3: #2f82a8;
+    --cor4: #281a5c;
+    --cor5: #06103d;
+    --cor6: #8910c2 ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue ;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor2);
+    color: black;
+    height: 4.5rem;
+    padding: 0 25px;
+    box-shadow: 0px 5px rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    width:100%;
+   
+   
+  }
+
+    a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+
+   .button {
+    display: inline-flex ;
+    color: #06103d;
+    background-color: var(--cor1);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 3px 5px 0px black;
+    transition: 400ms linear;
+
+  }
+
+  .button:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    box-shadow: 1px 1px 0px var(--cor1); 
+  }
+
+nav a:hover{
+    color: var(--cor0);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1{
+  color: var(--cor2);
+  text-align: center;
+  padding: 30px 0px;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:aliceblue;
+    flex-direction: column;
+ }
+ .text{
+     font-size: 45px;
+     color: var(--cor2);
+     margin-bottom: 10px;
+ }
+ .paragrafo{
+     color: var(--cor2);
+     margin-bottom: 30px;
+ }
+ .btn{
+     padding: 15px 55px;
+     background: var(--cor2);
+     text-decoration: none;
+     color: #101026;
+     font-size: 18px;
+     transition: all 0.5s;
+     box-shadow: 1PX 2PX black;
+ }
+ .btn:hover{
+     
+     color: aliceblue;
+     background-color: var(--cor4);
+     box-shadow: 2px 4px var(--cor1);
+ }

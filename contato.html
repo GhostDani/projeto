@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <script defer src="app.js"></script>
     <title>Contato | SeuSite</title>
 </head>
 <body>
@@ -19,18 +18,22 @@
           <a href="#" class="button">Contato</a>
       </nav>
 
-      <form action="https://formsubmit.co/el/bamazu"
-      method="POST">
-    <h1>Formulário de Contato:</h1>
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome" required />
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" required />
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" required></textarea>
-      <button type="submit" data-button>Enviar</button>
-    </form>
-    <div class="gallery">
+      <section>
+        <h2>Contato:</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="1b570b55-240f-4dbb-8ce1-3bf9ec4d3dbb">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+        </form>
+    </section>
+
         <img
           src="images/logo.png"
           alt="breakfast"
