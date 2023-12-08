@@ -138,28 +138,9 @@ nav a:hover{
 
 }
 
-h1{
-    font-family: 'Press Start 2P', sans-serif, cursive;
-    color: white;
-    font-size: 40px;
-    text-shadow: 2px 2px 0px var(--cor5);
-    padding: 10px;
-    
 
-}
 
-#box{
-   display:inline-block;
-    background-color:var(--cor1);
-    box-shadow: 3px 3px 0 var(--cor5);
-    text-align: center;
-    border-radius: 15px;
-    padding: 10px 34px;
-    margin-top: 25px;
-    margin-left: 100px;
-   
 
-}
 
 
 section{
@@ -183,14 +164,14 @@ section.imagem{
 
 
 section#img01{
-    background-image: url(images/fundo3.jpg);
-    background-position: right center;
+    background-image: url(images/fundo1.jpg);
+    background-position: left center;
 
 }
 
 section#img02{
-    background-image: url(images/imagem3.jpg);
-    background-position: right center;
+    background-image: url(images/fundo3.jpg);
+    background-position:right bottom;
 }
 
 /* >> BOTÃO WHATSAP<< */
