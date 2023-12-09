@@ -38,6 +38,7 @@ display: flex;
     section#lnk{
         display:block;
         padding: 6rem 0.5em;
+        text-align: center;
         }
 
 }
@@ -47,8 +48,16 @@ section#lnk div{
 padding-left: 1rem;
 }
 
+.elnk{
+    color: var(--cor2);
+}
+
+.elnk:hover{
+    color: white;
+}
+
 h1{
-    padding-left: 4rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     color: var( --cor2);
     
