@@ -33,6 +33,16 @@ padding: 6rem 2rem;
 display: flex;
  
 }
+
+@media screen and (max-width: 600px){
+    section#lnk{
+        display:block;
+        padding: 6rem 0.5em;
+        }
+
+}
+    
+
 section#lnk div{
 padding-left: 1rem;
 }
